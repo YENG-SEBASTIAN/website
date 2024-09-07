@@ -5,7 +5,7 @@ const SkillsSection = () => {
     <section className="ftco-section mt-16 mb-16 bg-gray-100 py-12" id="skills-section">
       <div className="container mx-auto px-4">
         <div className="pb-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-5">My Skills</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-5">Skills</h1>
           <p className="text-gray-600 max-w-3xl mx-auto">
             I specialize in developing responsive, dynamic, and scalable web applications. My expertise spans full-stack development, data analysis, and machine learning, ensuring that business goals are met through innovative and efficient coding practices.
           </p>
