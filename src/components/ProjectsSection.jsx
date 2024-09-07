@@ -26,7 +26,7 @@ const ProjectsSection = () => {
           <ProjectCard
             image={bg6}
             title="Diet Recommender"
-            category="AI diet recommener web app"
+            category="AI diet recommender web app"
             liveUrl="https://ml-diet.onrender.com/"
             githubUrl="https://github.com/YENG-SEBASTIAN/ML-diet"
           />
