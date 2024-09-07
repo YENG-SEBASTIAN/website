@@ -1,0 +1,8 @@
+/* App.css */
+
+.app {
+  position: relative; /* Ensure position relative for absolute positioning of MousePointerWave */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: auto; /* Enable vertical scrollbar when necessary */
+  height: 100%; /* Ensure the component takes up full viewport height */
+}

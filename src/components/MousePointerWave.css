@@ -1,0 +1,22 @@
+/* MousePointerWave.css */
+
+.circle-wave {
+    position: fixed;
+    width: 3rem; /* Adjust size as needed */
+    height: 3rem; /* Adjust size as needed */
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.5); /* Adjust color and opacity */
+    pointer-events: none; /* Ensure it doesn't interfere with mouse events */
+    z-index: 1000; /* Ensure it's above other elements */
+    animation: wave 1s infinite alternate; /* Waving animation */
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  
