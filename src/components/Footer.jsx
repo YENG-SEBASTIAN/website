@@ -32,10 +32,10 @@ const Footer = () => {
 
     emailjs
       .send(
-        'service_q8v57gh', // Replace with your EmailJS service ID
-        'template_zoaro9b', // Replace with your EmailJS template ID
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         formData,
-        'jAPduhp2PUyaAfQr1' // Replace with your EmailJS user ID
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then((result) => {
         setStatusMessage('Message sent successfully!');

@@ -1,10 +1,10 @@
 import React from 'react';
-import { AiOutlineAntDesign, AiOutlineApi, AiOutlineTool } from 'react-icons/ai';
-import { FaDatabase, FaCode } from 'react-icons/fa'; // Added relevant icons
+import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';
+import { FaDatabase, FaCode } from 'react-icons/fa';
 import frontend from '../assets/images/frontend.jpg';
 import backend from '../assets/images/backend.jpg';
 import fullstack from '../assets/images/image_3.jpg';
-import dataanalysis from '../assets/images/data_analysis.jpeg'; // Placeholder for data analysis image
+import dataanalysis from '../assets/images/data_analysis.jpeg';
 
 const ServicesSection = () => {
   return (
