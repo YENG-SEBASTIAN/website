@@ -1,46 +1,74 @@
-import React from 'react';
-import bg3 from '../assets/images/bg_3.png';
+import React, { useState } from 'react';
+import ProjectsSection from './ProjectsSection';
+
+// Dummy components for the tabs
+const Projects = () => <div>Projects Content</div>;
+const Service = () => <div>Service Content</div>;
+const Resume = () => <div>Resume Content</div>;
 
 const AboutSection = () => {
+  const [activeTab, setActiveTab] = useState('Projects'); // Default tab
+
+  // Handle tab switching
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case 'Projects':
+        return <ProjectsSection />;
+      case 'Service':
+        return <Service />;
+      case 'Resume':
+        return <Resume />;
+      default:
+        return <Projects />;
+    }
+  };
+
   return (
-    <section className="ftco-about img ftco-section ftco-no-pb" id="about-section">
-      <div className="container mx-auto">
-        <div className="md:flex">
-          {/* Image Section */}
-          <div className="md:w-1/2 relative">
-            <div className="img-about img relative h-full">
-              <div className="overlay absolute inset-0 bg-gray-800 opacity-75"></div>
-              <div
-                className="img h-full bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${bg3})`,
-                  width: '100%',
-                  height: '100%',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)",
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                }}
-              ></div>
+    <section className="about-section ftco-about img ftco-section ftco-no-pb py-10">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16">
+        <div className="flex flex-col md:flex-row">
+          {/* Left Column: Contact Information */}
+          <div className="w-full md:w-4/12 mb-8 md:mb-0 md:mr-8">
+            <div className="card bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl mb-4 text-center md:text-left">Contact Info</h3>
+              <ul className="list-none leading-relaxed">
+                <li className="mb-2"><strong>Phone:</strong> +233 200 037 753</li>
+                <li className="mb-2"><strong>WhatsApp:</strong> +233 547 337 110</li>
+                <li className="mb-2"><strong>Email:</strong> <a href="mailto:yengsebastians@gmail.com" className="text-blue-500">yengsebastians@gmail.com</a></li>
+                <li className="mb-2"><strong>Git:</strong> <a href="https://github.com/YENG-SEBASTIAN" target="_blank" rel="noreferrer" className="text-blue-500">YENG-SEBASTIAN</a></li>
+                <li><strong>Work:</strong> Available</li>
+              </ul>
             </div>
           </div>
-          {/* Content Section */}
-          <div className="md:w-1/2 pl-8 flex items-center">
-            <div className="pt-20 md:pt-0">
-              <div className="mb-8 text-center md:text-left"> {/* Center text on mobile, left align on md and larger screens */}
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 relative inline-block after:absolute after:left-0 after:top-0 after:bottom-0 after:z-[-1] after:w-full after:h-full mt-3">About</h1>
+
+          {/* Right Column: Tabs and Tab Content */}
+          <div className="w-full md:w-8/12 flex flex-col items-center md:items-start">
+            <div className="tabs w-full">
+              <ul className="flex justify-center space-x-8 border-b-2 border-gray-300 pb-2 mb-6">
+                <li
+                  className={`cursor-pointer ${activeTab === 'Projects' ? 'font-bold text-blue-600 border-b-2 border-blue-600' : 'text-gray-600'}`}
+                  onClick={() => setActiveTab('Projects')}
+                >
+                  Projects
+                </li>
+                <li
+                  className={`cursor-pointer ${activeTab === 'Service' ? 'font-bold text-blue-600 border-b-2 border-blue-600' : 'text-gray-600'}`}
+                  onClick={() => setActiveTab('Service')}
+                >
+                  Service
+                </li>
+                <li
+                  className={`cursor-pointer ${activeTab === 'Resume' ? 'font-bold text-blue-600 border-b-2 border-blue-600' : 'text-gray-600'}`}
+                  onClick={() => setActiveTab('Resume')}
+                >
+                  Resume
+                </li>
+              </ul>
+
+              {/* Tab Content */}
+              <div className="tab-content p-6 bg-white shadow rounded-lg w-full">
+                {renderTabContent()}
               </div>
-              <div className="text-gray-700 leading-relaxed">
-                <p className="mb-4">
-                  I am a passionate and dedicated full-stack developer with a strong foundation in both front-end and back-end technologies with a keen eye for detail and a commitment to delivering high-quality work, I thrive on transforming complex problems into elegant, efficient solutions. My journey in development has equipped me with a diverse skill set, enabling me to build robust, scalable applications from scratch.
-                </p>
-                <p className="mb-4">
-                  I am always eager to learn and stay updated with the latest industry trends and technologies. This continuous learning mindset ensures that I bring innovative solutions to the projects I work on, making sure they are future-proof and maintainable. Whether I'm working independently or as part of a collaborative team, my goal is always the same: to create exceptional digital experiences that exceed expectations and deliver real value to users.
-                </p>
-              </div>
-              
             </div>
           </div>
         </div>

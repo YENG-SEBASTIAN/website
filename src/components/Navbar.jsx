@@ -2,7 +2,7 @@ import React from 'react';
 import { Disclosure, Menu } from '@headlessui/react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { Link as ScrollLink } from 'react-scroll';
-import Sabs from '../assets/images/sabs.jpeg';
+import Sabs from '../assets/images/sabs-logo.png';
 
 
 const navigation = [

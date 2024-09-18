@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaMapSigns, FaPhone, FaWhatsapp, FaPaperPlane } from 'react-icons/fa';
-import bg3 from '../assets/images/bg_3.png';
 
 const ContactSection = () => {
   return (

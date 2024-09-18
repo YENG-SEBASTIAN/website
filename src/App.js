@@ -6,8 +6,6 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
 import SkillsSection from './components/SkillsSection';
-import ProjectsSection from './components/ProjectsSection';
-import BlogSection from './components/BlogSection';
 import HireMeSection from './components/HireMeSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -21,8 +19,6 @@ function App() {
       <AboutSection />
       <ServicesSection />
       <SkillsSection />
-      <ProjectsSection />
-      {/* <BlogSection /> */}
       <HireMeSection />
       <ContactSection />
       <Footer />
