@@ -11,7 +11,7 @@ const ServicesSection = () => {
     <section className="ftco-section" id="services-section">
       <div className="container mx-auto">
         <div className="py-5 mt-5 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">What I do</h1>
           <p className="text-gray-600">Unlocking Success Through Exceptional Development Transforming Vision into Reality for Business Growth</p>
         </div>
         <div className="flex flex-wrap justify-center">
@@ -30,11 +30,11 @@ const ServicesSection = () => {
             title="Full Stack"
             image={fullstack}
           />
-          <ServiceItem
+          {/* <ServiceItem
             icon={<FaDatabase className="text-5xl" />}
             title="Data Analysis"
             image={dataanalysis}
-          />
+          /> */}
         </div>
       </div>
     </section>
@@ -43,7 +43,7 @@ const ServicesSection = () => {
 
 const ServiceItem = ({ icon, title, image }) => {
   return (
-    <div className="w-full md:w-1/3 lg:w-1/4 p-4 text-center">
+    <div className="w-full md:w-1/3 lg:w-1/3 p-4 text-center">
       <div
         className="block bg-gray-800 rounded-lg shadow-md overflow-hidden hover:bg-gray-700 transition duration-300"
       >

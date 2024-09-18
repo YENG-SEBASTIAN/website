@@ -8,7 +8,7 @@ import Sabs from '../assets/images/sabs.jpeg';
 const navigation = [
   { name: 'Home', href: 'home-section', current: true },
   { name: 'About', href: 'about-section', current: false },
-  { name: 'Services', href: 'services-section', current: false },
+  { name: 'Service', href: 'services-section', current: false },
   { name: 'Skills', href: 'skills-section', current: false },
   { name: 'Projects', href: 'projects-section', current: false },
   // { name: 'My Blog', href: 'blog-section', current: false },
