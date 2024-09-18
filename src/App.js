@@ -1,10 +1,7 @@
-// App.jsx
-
 import React from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
-import ServicesSection from './components/ServicesSection';
 import SkillsSection from './components/SkillsSection';
 import HireMeSection from './components/HireMeSection';
 import ContactSection from './components/ContactSection';
@@ -17,7 +14,6 @@ function App() {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <ServicesSection />
       <SkillsSection />
       <HireMeSection />
       <ContactSection />

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import ProjectsSection from './ProjectsSection';
+import ServicesSection from './ServicesSection';
 
 // Dummy components for the tabs
-const Projects = () => <div>Projects Content</div>;
 const Service = () => <div>Service Content</div>;
 const Resume = () => <div>Resume Content</div>;
 
@@ -15,11 +15,11 @@ const AboutSection = () => {
       case 'Projects':
         return <ProjectsSection />;
       case 'Service':
-        return <Service />;
+        return <ServicesSection />;
       case 'Resume':
         return <Resume />;
       default:
-        return <Projects />;
+        return <ProjectsSection />;
     }
   };
 
