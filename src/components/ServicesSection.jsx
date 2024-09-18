@@ -8,7 +8,7 @@ import dataanalysis from '../assets/images/data_analysis.jpeg';
 
 const ServicesSection = () => {
   return (
-    <section className="ftco-section py-5" id="services-section">
+    <section className="ftco-section py-5 " id="services-section">
       <div className="container mx-auto px-4 md:px-8 lg:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <ServiceItem

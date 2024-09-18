@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import ProjectsSection from './ProjectsSection';
 import ServicesSection from './ServicesSection';
+import Resume from './Resume';
 
-// Dummy components for the tabs
-const Service = () => <div>Service Content</div>;
-const Resume = () => <div>Resume Content</div>;
 
 const AboutSection = () => {
   const [activeTab, setActiveTab] = useState('Projects'); // Default tab
